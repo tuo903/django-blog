@@ -79,9 +79,9 @@ DATABASES = {
            'OPTIONS': {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
         },
-	    'NAME': 'django',
+	    'NAME': '',
             'USER': 'root', 
-            'PASSWORD': 'django2018', 
+            'PASSWORD': '', 
             'HOST': 'localhost',
             'PORT': '3306',
             }    
