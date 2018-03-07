@@ -1,1 +1,6 @@
-blog/settings.py
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# Distribution / packaging
+.blog
+settings.py
