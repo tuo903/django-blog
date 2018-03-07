@@ -6,4 +6,4 @@ __pycache__/
 # Distribution / packaging
 
 settings.py
-blog/settings.py
+.blog/settings.py
