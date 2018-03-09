@@ -25,7 +25,7 @@ SECRET_KEY = 'nkf@#js!1rtxpg4i)%74=ztg_@%+#*vlnq%dii21fj96kv*07k'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['hk.ooing.cn']
+ALLOWED_HOSTS = ['hk.ooing.cn','127.0.0.1']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'tblog',
 ]
 
 MIDDLEWARE = [
@@ -47,6 +48,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
 ]
 
 ROOT_URLCONF = 'blog.urls'
@@ -79,10 +81,10 @@ DATABASES = {
            'OPTIONS': {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
         },
-	    'NAME': 'django',
-            'USER': 'root', 
-            'PASSWORD': 'django2018', 
-            'HOST': 'localhost',
+	    'NAME': 'blog',
+            'USER': 'blog', 
+            'PASSWORD': 'blog2018', 
+            'HOST': '127.0.0.1',
             'PORT': '3306',
             }    
 }
@@ -112,7 +114,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Shanghai'
 
 USE_I18N = True
 
