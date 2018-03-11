@@ -18,6 +18,7 @@ from django.urls import path,include
 from django.conf.urls import url
 
 urlpatterns = [
-	url(r'^blog/',include('tblog.urls')),
+	url(r'^blog/',include('tblog.urls',namespace="blog")),
     path('admin/', admin.site.urls),
+    url(r'^account/',include('account.urls',namespace="account")),
 ]
