@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'tblog',
-    'account'
+    'account',
+    'article',
 ]
 
 MIDDLEWARE = [
@@ -129,9 +130,16 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS=[
+STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'static'),
 
 ]
 
-LOGIN_REDIRECT_URL='/blog/'#登录后跳转路径
+LOGIN_REDIRECT_URL = '/blog/'#登录后跳转路径
+
+EMAIL_HOST = 'smtp-mail.outlook.com'
+EMAIL_HOST_USER = 'tuo903@hotmail.com'
+EMAIL_HOST_PASSWORD = '999ooing.'
+EMAIL_PORT = '587'
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = 'tuo903@hotmail.com'
