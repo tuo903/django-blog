@@ -21,4 +21,5 @@ urlpatterns = [
 	url(r'^blog/',include('tblog.urls',namespace="blog")),
     path('admin/', admin.site.urls),
     url(r'^account/',include('account.urls',namespace="account")),
+    url(r'^article/', include('article.urls', namespace='article'))
 ]
